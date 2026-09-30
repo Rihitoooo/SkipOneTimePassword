@@ -1,0 +1,24 @@
+{
+    "name" : "SkipOneTimePassword",
+    "description" : "For KULASIS",
+    "version" : "1.0",
+    "manifest_version" : 3,
+    "content_scripts": [
+        {
+            "matches": ["https://auth.iimc.kyoto-u.ac.jp/pub/motplogin.cgi?*"],
+            "js": ["content.js"]
+        }
+    ],
+    "permissions": [
+        "identity"
+    ],
+    "oauth2": {
+        "client_id": "574744861949-v7tsjhsgohda24l09ueq7lfe5vv6os3i.apps.googleusercontent.com",
+        "scopes": [
+            "https://www.googleapis.com/auth/gmail.readonly"
+        ]
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+}
