@@ -4,7 +4,6 @@ async function main() {
     var result = confirm('ワンタイムパスワードを自動入力しますか？');
 
     if(result) {
-        //はいを選んだときの処理
         ShowWaitingMessage();
         chrome.runtime.sendMessage(
             {type: "GET_OTP"},
@@ -23,7 +22,6 @@ async function main() {
             }
         )
     } else {
-        //いいえを選んだときの処理
         alert("自動入力がキャンセルされました。");
     }
 }
