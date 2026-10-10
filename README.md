@@ -1,6 +1,7 @@
 # SkipOneTimePassword
 
 京都大学の認証システム（Kyoto University Authentication System）において、**メールによる多要素認証を利用する際に、ワンタイムパスワード（OTP）を自動入力するChrome拡張機能**です。
+コードは公開していますが、実際には許可されたユーザのみが使用できる設定になっています。
 
 ## 拡張機能の説明
 
